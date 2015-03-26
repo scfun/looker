@@ -1,0 +1,96 @@
+#nav{
+	background-color:#009933;
+}
+.book_list img{
+	width:180px;
+	height:190px;
+}
+.line{
+    height: 1px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+#book{
+	margin-top: 30px;
+}
+body{
+	padding-top: 40px;
+	font-family:"微软雅黑";
+}
+.page-header{
+	margin-top: 0px;
+  	margin-bottom: 0px;
+}
+#body{
+	background:none repeat scroll 0 0 #fff;
+}
+#booklist_title{
+	margin-top: 30px;
+	background-color:#EEEEEE;
+}
+.container{
+	width:980px;
+}
+footer{
+	font-family:"微软雅黑";
+	background:none repeat scroll 0 0 #fff;
+	margin-top: 30px;
+  	margin-left: auto;
+  	margin-right: auto;
+	width:980px;
+}
+footer a{
+	color:#009933;
+	margin-left: 15px;
+}
+footer a:hover{
+	color:#333;
+}
+#footer{
+	height:20px;
+}
+#copyright{
+	float:right;
+}
+.navbar-default .navbar-brand {
+    color: #EEEEEE;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+a {
+    color: #009933;
+    text-decoration: none;
+}
+.dropdown-menu > li > a {
+
+    color: #009933;
+
+}
+#tag-size1{
+	font-size: 11px;
+}
+#tag-size2{
+	font-size: 12px;
+}
+#tag-size3{
+	font-size: 14px;
+}
+#tag-size4{
+	font-size: 15px;
+}
+#tag-size5{
+	font-size: 16px;
+}
+#tag-size6{
+	font-size: 17px;
+}
+#tag-size7{
+	font-size: 18px;
+}
+#tag-size8{
+	font-size: 19px;
+}
+#tag-size9{
+	font-size: 20px;
+}
