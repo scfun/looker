@@ -1,9 +1,12 @@
+.{
+	font-family: "微软雅黑";
+}
 #nav{
 	background-color:#009933;
 }
 .book_list img{
-	width:180px;
-	height:190px;
+	width:120px;
+	height:164px;
 }
 .line{
     height: 1px;
@@ -93,4 +96,36 @@ a {
 }
 #tag-size9{
 	font-size: 20px;
+}
+#modal_title{
+	background-color: #eee;
+}
+.form-control{
+	width:70%;
+}
+.login-vline {
+    border-left: 1px solid #eee;
+    height: 90%;
+    left: 50%;
+    position: absolute;
+    top: 35px;
+}
+#description{
+	width: 30%;
+}
+#rtags a {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #aaa;
+    display: inline-block;
+    margin-right: 6px;
+    padding: 1px 3px;
+}
+
+#rtags a:hover, #rtags a.on {
+    background-color: #fff;
+    border-color: #999;
+    color: #000;
+    text-decoration: none;
 }

@@ -8,17 +8,16 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script>
 				$(function () {
-					  $('[data-toggle="popover"]').mousemove(function(){
-					  		$popover();
-					  });
-				});
+					  $('[data-toggle="popover"]').popover('')
+				})
+				
 		</script>
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top" id="nav">
 			<div class="container">
 				<div class="navbar-header">
-		   		<a class="navbar-brand" href="#" style="font-size:25px"><b>代号I</b></a>
+		   		<a class="navbar-brand" href="#" style="font-size:25px"><b>没有名字</b></a>
 				</div>
 				<div class="collapse navbar-collapse">
 			      <ul class="nav navbar-nav">
@@ -44,8 +43,8 @@
 			            <li><a href="#">登出</a></li>
 			          </ul>
 			        </li> -->
-			        <li><a href="#">快来加入吧</a></li>
-			        <li><a href="#">登录</a></li>
+			        <li><a href="#" data-toggle="modal" data-target="#loginModal">登录</a></li>
+			        <li><a href="#" data-toggle="modal" data-target="#loginModal">注册</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
@@ -150,6 +149,14 @@
 							<span id="tag-size2"><a href="#">商业</a></span>
 							<span id="tag-size5"><a href="#">漫画</a></span>
 							<span id="tag-size3"><a href="#">故事</a></span>
+							<span id="tag-size7"><a href="#">管理</a></span>
+							<span id="tag-size2"><a href="#">商业</a></span>
+							<span id="tag-size5"><a href="#">漫画</a></span>
+							<span id="tag-size3"><a href="#">故事</a></span>
+							<span id="tag-size7"><a href="#">管理</a></span>
+							<span id="tag-size2"><a href="#">商业</a></span>
+							<span id="tag-size5"><a href="#">漫画</a></span>
+							<span id="tag-size3"><a href="#">故事</a></span>
 						</div>
 						</div>
 					<div class="row">
@@ -232,55 +239,46 @@
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="" style="text-align:center">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book1.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book2.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book3.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book4.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 							<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book1.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book2.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
@@ -291,13 +289,11 @@
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book4.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class = "book_list" id="book">
 								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
 							</div>
 						</div>
 					</div>
@@ -316,4 +312,61 @@
 					</div>
 				</div>
 		</footer>
+			<div class="modal fade" id="loginModal">
+		  		<div class="modal-dialog modal-lg">
+		    		<div class="modal-content">
+		      			<div class="modal-header" id="modal_title">
+		        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		       		 		<h4 class="modal-title"><b>登录</b></h4>
+		     	 		</div>
+		      	<div class="modal-body">
+		       		<div class="container-fluid">
+		       		   <div class="row">
+		       		   	<div class="col-md-1">
+		       		   	</div>
+		       		   	<div class="col-md-5">
+			       		<form>
+			       			<label for="recipient-name" class="control-label"><h3><b>创建新账号:</b></h3></label>
+				          <div class="form-group">
+				            <label for="recipient-name" class="control-label">用户名:</label>
+				            <input type="text" class="form-control" id="recipient-name">
+				          </div>
+				          <div class="form-group">
+				            <label for="message-text" class="control-label">Email:</label>
+				            <input type="email" class="form-control" id="recipient-name">
+				          </div>
+				           <div class="form-group">
+				            <label for="message-text" class="control-label">密码:</label>
+				            <input type="password" class="form-control" id="recipient-name">
+				          </div>
+				          <div class="form-group">
+				 			<button class="btn btn-success" type="submit" value="登录">注册</button>
+				          </div>
+				        </form>
+				    	</div>
+				    	<div class="login-vline hidden-xs hidden-sm"></div>
+						<div class="col-md-1">
+		       		   	</div>
+				    	<div class="col-md-5">
+			       		<form>
+			       			<label for="recipient-name" class="control-label"><h3><b>用户登录:</b></h3></label>
+				          <div class="form-group">
+				            <label for="recipient-name" class="control-label">用户名:</label>
+				            <input type="text" class="form-control" id="recipient-name">
+				          </div>
+				          <div class="form-group">
+				            <label for="message-text" class="control-label">密码:</label>
+				            <input type="text" class="form-control" id="recipient-name">
+				          </div>
+				            <div class="form-group">
+				 			<button class="btn btn-success" type="submit" value="登录">登录</button>
+				          </div>
+				        </form>
+				    	</div>
+			        </div>
+		      	</div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+</div>
 </html>
