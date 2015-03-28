@@ -12,16 +12,17 @@
 				})
 				$(function(){
 				 var $description = $("#description");
-				  $("#rtags").click(function(){
-				    // if($(this).hasClass("on")){
-				    //   $(this).removeClass("on");
-				    //   $description.focus().val($description.val().replace($(this).text() + " ",""));
-				    // }el
+				  $("#rtags a").click(function() {
+				    if($(this).hasClass("on")){
+				   	 $(this).removeClass("on");
+				       $description.focus().val($description.val().replace($(this).text() + " ",""));
+				    }else{
 				      $(this).addClass("on");
-				      $description.focus().val($description.val() + $(this).text() + "");
-				    // }
-				    return false;
+				      $description.focus().val($description.val() + $(this).text() + " ");
+				   }
+				    //return false;
   				});
+				});
 		</script>
 	</head>
 	<body>
@@ -83,34 +84,35 @@
 				            <label for="message-text" class="control-label">选择要上传的文件:</label>
 				            <input type="file" />
 				          </div>
-				             <div class="form-group">
+				           <div class="form-group">
 				            <label for="recipient-name" class="control-label">书籍一句话描述</label>
-				            <textarea class="form-control" rows="3" id="description"></textarea>
+				            <textarea class="form-control" rows="3" id="description" value="none"></textarea>
 				            </textarea>
 				          </div>
-				          	<div >
+				          	<div class="form-group" >
+				          		<label for="message-text">快捷输入:</label>
 				          		<ul id="rtags" class="list-unstyled">
 								<li>
-									<a href="#">排版精美</a>
-									<a href="#">排版一般</a>
-									<a href="#">排版混乱</a>
+									<a >排版精美</a>
+									<a >排版一般</a>
+									<a >排版混乱</a>
 								</li>
 								<li>
-									<a href="#">有目录</a>
-									<a href="#">无目录</a>
-									<a href="#">有封面</a>
-									<a href="#">无封面</a>
+									<a >有目录</a>
+									<a >无目录</a>
+									<a >有封面</a>
+									<a >无封面</a>
 								</li>
 								<li>
-									<a href="#">中文简体</a>
-									<a href="#">中文繁体</a>
-									<a href="#">英文原版</a>
+									<a >中文简体</a>
+									<a >中文繁体</a>
+									<a >英文原版</a>
 								</li>
 								</ul>
 				          	</div>
 				            <div class="form-group">
-				 			<button class="btn btn-success" type="submit" value="登录">上传</button>
-				          </div>
+				 			<button class="btn btn-success" type="submit" value="share">发布</button>
+				          	</div>
 				        </form>
 					</div>
 				</div>
