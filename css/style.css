@@ -1,108 +1,138 @@
-.{
-	font-family: "微软雅黑";
+. {
+    font-family: "微软雅黑";
 }
-#nav{
-	background-color:#009933;
+
+#nav {
+    background-color: #009933;
 }
-.book_list img{
-	width:120px;
-	height:164px;
+
+.book_list img {
+    width: 120px;
+    height: 164px;
 }
-.line{
+
+.line {
     height: 1px;
     border-top: 1px solid #ddd;
     text-align: center;
 }
-#book{
-	margin-top: 30px;
+
+#book {
+    margin-top: 30px;
 }
-body{
-	padding-top: 40px;
-	font-family:"微软雅黑";
+
+body {
+    padding-top: 40px;
+    font-family: "微软雅黑";
 }
-.page-header{
-	margin-top: 0px;
-  	margin-bottom: 0px;
+
+.page-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-#body{
-	background:none repeat scroll 0 0 #fff;
+
+#body {
+    background: none repeat scroll 0 0 #fff;
 }
-#booklist_title{
-	margin-top: 30px;
-	background-color:#EEEEEE;
+
+#booklist_title {
+    margin-top: 30px;
+    background-color: #EEEEEE;
 }
-.container{
-	width:980px;
+
+.container {
+    width: 980px;
 }
-footer{
-	font-family:"微软雅黑";
-	background:none repeat scroll 0 0 #fff;
-	margin-top: 30px;
-  	margin-left: auto;
-  	margin-right: auto;
-	width:980px;
+
+footer {
+    font-family: "微软雅黑";
+    background: none repeat scroll 0 0 #fff;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
 }
-footer a{
-	color:#009933;
-	margin-left: 15px;
+
+footer a {
+    color: #009933;
+    margin-left: 15px;
 }
-footer a:hover{
-	color:#333;
+
+footer a:hover {
+    color: #333;
 }
-#footer{
-	height:20px;
+
+#footer {
+    height: 20px;
 }
-#copyright{
-	float:right;
+
+#copyright {
+    float: right;
 }
+
 .navbar-default .navbar-brand {
     color: #EEEEEE;
 }
+
 .navbar-default .navbar-nav > li > a {
     color: #FFFFFF;
 }
+
 a {
     color: #009933;
     text-decoration: none;
 }
+
 .dropdown-menu > li > a {
 
     color: #009933;
 
 }
-#tag-size1{
-	font-size: 11px;
+
+#tag-size1 {
+    font-size: 11px;
 }
-#tag-size2{
-	font-size: 12px;
+
+#tag-size2 {
+    font-size: 12px;
 }
-#tag-size3{
-	font-size: 14px;
+
+#tag-size3 {
+    font-size: 14px;
 }
-#tag-size4{
-	font-size: 15px;
+
+#tag-size4 {
+    font-size: 15px;
 }
-#tag-size5{
-	font-size: 16px;
+
+#tag-size5 {
+    font-size: 16px;
 }
-#tag-size6{
-	font-size: 17px;
+
+#tag-size6 {
+    font-size: 17px;
 }
-#tag-size7{
-	font-size: 18px;
+
+#tag-size7 {
+    font-size: 18px;
 }
-#tag-size8{
-	font-size: 19px;
+
+#tag-size8 {
+    font-size: 19px;
 }
-#tag-size9{
-	font-size: 20px;
+
+#tag-size9 {
+    font-size: 20px;
 }
-#modal_title{
-	background-color: #eee;
+
+#modal_title {
+    background-color: #eee;
 }
-.form-control{
-	width:70%;
+
+.form-control {
+    width: 70%;
 }
+
 .login-vline {
     border-left: 1px solid #eee;
     height: 90%;
@@ -110,9 +140,11 @@ a {
     position: absolute;
     top: 35px;
 }
-#description{
-	width: 30%;
+
+#description {
+    width: 30%;
 }
+
 #rtags a {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
