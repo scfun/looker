@@ -1,375 +1,391 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script>
-				$(function () {
-					  $('[data-toggle="popover"]').mousemove(function(){
-					  		$popover();
-					  });
-				});
-		</script>
-	</head>
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top" id="nav">
-			<div class="container">
-				<div class="navbar-header">
-		   		<a class="navbar-brand" href="#" style="font-size:25px"><b>代号I</b></a>
-				</div>
-				<div class="collapse navbar-collapse">
-			      <ul class="nav navbar-nav">
-			        <li><a href="#">首页</a></li>
-			        <li><a href="#">书屋</a></li>
-			        <li><a href="#">讨论</a></li>
-			 		</ul>
-			      <form class="navbar-form navbar-left" role="search">
-			        <div class="form-group">
-			        <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-			          <input type="text" class="form-control" placeholder="输入点什么">
-			        </div>
-			      </form>
-					<button type="button" class="btn btn-success navbar-btn">发布书籍</button>
-			      <ul class="nav navbar-nav navbar-right">
-			    <!--     <li><a href="#">消息</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">刘俊杰 <span class="caret"></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="#">账号设置</a></li>
-			            <li><a href="#">密码修改</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">登出</a></li>
-			          </ul>
-			        </li> -->
-			        <li><a href="#" data-toggle="modal" data-target="#loginModal">登录</a></li>
-			        <li><a href="#" data-toggle="modal" data-target="#loginModal">注册</a></li>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
-			</div>
-		</nav>
-		<body>
-			<div class="container" id="body">
-				<div class="row">
-					<div class="col-md-12" id="booklist_title">
-						<div class="page-header">
-					  		<h4 id="title"><b>标签</b>&nbsp;&nbsp;<small><a href="#">查看更多</a></small></h4>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="page-header">
-					  		<span id="tag-size6"><a href="#">小说</a></span>
-							<span id="tag-size9"><a href="#">计算机</a></span>
-							<span id="tag-size7"><a href="#">管理</a></span>
-							<span id="tag-size2"><a href="#">商业</a></span>
-							<span id="tag-size5"><a href="#">漫画</a></span>
-							<span id="tag-size3"><a href="#">故事</a></span>
-							<span id="tag-size20"><a href="#">管理</a></span>
-							<span id="tag-size2"><a href="#">商业</a></span>
-							<span id="tag-size5"><a href="#">漫画</a></span>
-							<span id="tag-size3"><a href="#">故事</a></span>
-							<span id="tag-size7"><a href="#">管理</a></span>
-							<span id="tag-size2"><a href="#">商业</a></span>
-							<span id="tag-size5"><a href="#">漫画</a></span>
-							<span id="tag-size3"><a href="#">故事</a></span>
-							<span id="tag-size7"><a href="#">管理</a></span>
-							<span id="tag-size2"><a href="#">商业</a></span>
-							<span id="tag-size5"><a href="#">漫画</a></span>
-							<span id="tag-size3"><a href="#">故事</a></span>
-						</div>
-						</div>
-				<div class="row">
-					<div class="col-xs-4 col-md-12" id="booklist_title">
-						<div class="page-header">
-					  	<h4 id="title"><b>精品电子书</b>&nbsp;&nbsp;<small><a href="#">查看更多</a></small></h4>
-						</div>
-						</div>
-					</div>
-				<div class="row" >
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<a href=""><img src="img/book.jpg" class="img-thumbnail" trigger='hover' data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"/></a>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book1.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book2.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book3.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book4.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-						<div class = "book_list">
-							<img src="img/book.jpg" class="img-thumbnail" />
-						</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book1.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book2.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book3.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book4.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-xs-2 col-md-2" id="book">
-							<div class = "book_list">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-					<div class="col-md-12" id="booklist_title">
-						<div class="page-header">
-					  	<h4 id="title"><b>小说</b>&nbsp;&nbsp;<small><a href="#">查看更多</a></small></h4>
-						</div>
-						</div>
-					</div>
-					<div class="row" >
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book1.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book2.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book3.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book4.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-							<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book1.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book2.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book3.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book4.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-					<div class="col-md-12" id="booklist_title">
-						<div class="page-header">
-					  	<h4 id="title"><b>计算机</b>&nbsp;&nbsp;<small><a href="#">查看更多</a></small></h4>
-						</div>
-						</div>
-					</div>
-					<div class="row" >
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="" style="text-align:center">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book1.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book2.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book3.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book4.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-							<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book1.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book2.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book3.jpg" class="img-thumbnail"/>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book4.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class = "book_list" id="book">
-								<img src="img/book.jpg" class="img-thumbnail"/>
-								<a href="">大数据时代</a>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-		</body>
-		<footer>
-				<div class="container">
-					<div class="row" id="footer">
-					<div class="line"></div>
-						<div class="col-md-12" id="about">
-							<a href="#">关于我们</a>
-							<a href="#">联系我们</a>
-							<a href="#" id="copyright">Copyright © 2011-2015 looker.</a>
-						</div>
-					</div>
-				</div>
-		</footer>
-			<div class="modal fade" id="loginModal">
-		  		<div class="modal-dialog modal-lg">
-		    		<div class="modal-content">
-		      			<div class="modal-header" id="modal_title">
-		        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		       		 		<h4 class="modal-title"><b>登录</b></h4>
-		     	 		</div>
-		      	<div class="modal-body">
-		       		<div class="container-fluid">
-		       		   <div class="row">
-		       		   	<div class="col-md-1">
-		       		   	</div>
-		       		   	<div class="col-md-5">
-			       		<form>
-			       			<label for="recipient-name" class="control-label"><h3><b>创建新账号:</b></h3></label>
-				          <div class="form-group">
-				            <label for="recipient-name" class="control-label">用户名:</label>
-				            <input type="text" class="form-control" id="recipient-name">
-				          </div>
-				          <div class="form-group">
-				            <label for="message-text" class="control-label">Email:</label>
-				            <input type="email" class="form-control" id="recipient-name">
-				          </div>
-				           <div class="form-group">
-				            <label for="message-text" class="control-label">密码:</label>
-				            <input type="password" class="form-control" id="recipient-name">
-				          </div>
-				          <div class="form-group">
-				 			<button class="btn btn-success" type="submit" value="登录">注册</button>
-				          </div>
-				        </form>
-				    	</div>
-				    	<div class="login-vline hidden-xs hidden-sm"></div>
-						<div class="col-md-1">
-		       		   	</div>
-				    	<div class="col-md-5">
-			       		<form>
-			       			<label for="recipient-name" class="control-label"><h3><b>用户登录:</b></h3></label>
-				          <div class="form-group">
-				            <label for="recipient-name" class="control-label">用户名:</label>
-				            <input type="text" class="form-control" id="recipient-name">
-				          </div>
-				          <div class="form-group">
-				            <label for="message-text" class="control-label">密码:</label>
-				            <input type="text" class="form-control" id="recipient-name">
-				          </div>
-				            <div class="form-group">
-				 			<button class="btn btn-success" type="submit" value="登录">登录</button>
-				          </div>
-				        </form>
-				    	</div>
-			        </div>
-		      	</div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').mousemove(function () {
+                $popover();
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="font-size:25px"><b>代号I</b></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">书屋</a></li>
+                <li><a href="#">讨论</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"
+                                                                        aria-hidden="true"></span></button>
+                    <input type="text" class="form-control" placeholder="输入点什么">
+                </div>
+            </form>
+            <a href="share_book.html" class="btn btn-success navbar-btn">发布书籍</a>
+            <ul class="nav navbar-nav navbar-right">
+                <!--     <li><a href="#">消息</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">刘俊杰 <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">账号设置</a></li>
+                        <li><a href="#">密码修改</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">登出</a></li>
+                      </ul>
+                    </li> -->
+                <li><a href="#" data-toggle="modal" data-target="#loginModal">登录</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#loginModal">注册</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="container" id="body">
+<div class="row">
+    <div class="col-md-12" id="booklist_title">
+        <div class="page-header">
+            <h4 id="title"><b>标签</b>&nbsp;&nbsp;
+                <small><a href="#">查看更多</a></small>
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="page-header">
+        <span id="tag-size6"><a href="#">小说</a></span>
+        <span id="tag-size9"><a href="#">计算机</a></span>
+        <span id="tag-size7"><a href="#">管理</a></span>
+        <span id="tag-size2"><a href="#">商业</a></span>
+        <span id="tag-size5"><a href="#">漫画</a></span>
+        <span id="tag-size3"><a href="#">故事</a></span>
+        <span id="tag-size20"><a href="#">管理</a></span>
+        <span id="tag-size2"><a href="#">商业</a></span>
+        <span id="tag-size5"><a href="#">漫画</a></span>
+        <span id="tag-size3"><a href="#">故事</a></span>
+        <span id="tag-size7"><a href="#">管理</a></span>
+        <span id="tag-size2"><a href="#">商业</a></span>
+        <span id="tag-size5"><a href="#">漫画</a></span>
+        <span id="tag-size3"><a href="#">故事</a></span>
+        <span id="tag-size7"><a href="#">管理</a></span>
+        <span id="tag-size2"><a href="#">商业</a></span>
+        <span id="tag-size5"><a href="#">漫画</a></span>
+        <span id="tag-size3"><a href="#">故事</a></span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4 col-md-12" id="booklist_title">
+        <div class="page-header">
+            <h4 id="title"><b>精品电子书</b>&nbsp;&nbsp;
+                <small><a href="#">查看更多</a></small>
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <a href=""><img src="img/book.jpg" class="img-thumbnail" trigger='hover' data-toggle="popover"
+                            title="Popover title"
+                            data-content="And here's some amazing content. It's very engaging. Right?"/></a>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book1.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book2.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book3.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book4.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book1.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book2.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book3.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book4.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-xs-2 col-md-2" id="book">
+        <div class="book_list">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" id="booklist_title">
+        <div class="page-header">
+            <h4 id="title"><b>小说</b>&nbsp;&nbsp;
+                <small><a href="#">查看更多</a></small>
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book1.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book2.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book3.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book4.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book1.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book2.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book3.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book4.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" id="booklist_title">
+        <div class="page-header">
+            <h4 id="title"><b>计算机</b>&nbsp;&nbsp;
+                <small><a href="#">查看更多</a></small>
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+            <a href="" style="text-align:center">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book1.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book2.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book3.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book4.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book1.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book2.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book3.jpg" class="img-thumbnail"/>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book4.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="book_list" id="book">
+            <img src="img/book.jpg" class="img-thumbnail"/>
+            <a href="">大数据时代</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+<footer>
+    <div class="container">
+        <div class="row" id="footer">
+            <div class="line"></div>
+            <div class="col-md-12" id="about">
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#" id="copyright">Copyright © 2011-2015 looker.</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" id="modal_title">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><b>登录</b></h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-5">
+                            <form>
+                                <label for="recipient-name" class="control-label"><h3><b>创建新账号:</b></h3></label>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="control-label">用户名:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="control-label">Email:</label>
+                                    <input type="email" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="control-label">密码:</label>
+                                    <input type="password" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-success" type="submit" value="登录">注册</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="login-vline hidden-xs hidden-sm"></div>
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-5">
+                            <form>
+                                <label for="recipient-name" class="control-label"><h3><b>用户登录:</b></h3></label>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="control-label">用户名:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="control-label">密码:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-success" type="submit" value="登录">登录</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 </html>
